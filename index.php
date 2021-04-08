@@ -393,15 +393,17 @@ $key = getenv(API_KEY);
     <p class="bd-adress">Our garage is in Ambassador Ave, Beverly Hills</p>
    </div>
 
-  
-   <iframe
+  <?php 
+   echo  '<iframe
   width="100%"
   height="450"
   frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/place?<?php echo $key;?>
-    &q=Ambassador Ave, Beverly Hills" allowfullscreen>
+  src="https://www.google.com/maps/embed/v1/place?'.$key.'
+    &q=Ambassador Ave, Beverly Hills" allowfullscreen>';
 
-  </iframe>
+   echo '</iframe>';
+  ?>
+  
 
  
   
