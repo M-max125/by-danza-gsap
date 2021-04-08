@@ -1,3 +1,10 @@
+<?php 
+
+$key = getenv(API_KEY);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -391,7 +398,7 @@
   width="100%"
   height="450"
   frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDR518eKAYSHDZc2DwUiv9QcU421VcOi-M
+  src="https://www.google.com/maps/embed/v1/place?<?= $key;?>
     &q=Ambassador Ave, Beverly Hills" allowfullscreen>
 </iframe>
    
